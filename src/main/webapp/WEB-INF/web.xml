@@ -1,0 +1,91 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  
+	<servlet>
+		<servlet-name>LogInServlet</servlet-name>
+		<display-name>LogInServlet</display-name>
+		<description></description>
+		<servlet-class>controller.LogInServlet</servlet-class>
+	</servlet>
+  
+  	<servlet>
+		<servlet-name>LogOutServlet</servlet-name>
+		<display-name>LogOutServlet</display-name>
+		<description></description>
+		<servlet-class>controller.LogOutServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>MailServlet</servlet-name>
+		<display-name>MailServlet</display-name>
+		<description></description>
+		<servlet-class>controller.MailServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>SignUpServlet</servlet-name>
+		<display-name>SignUpServlet</display-name>
+		<description></description>
+		<servlet-class>controller.SignUpServlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<display-name>UploadServlet</display-name>
+		<description></description>
+		<servlet-class>controller.UploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EmailIdListServlet</servlet-name>
+		<display-name>EmailIdListServlet</display-name>
+		<description></description>
+		<servlet-class>controller.EmailIdListServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DMSServlet</servlet-name>
+		<display-name>DMSServlet</display-name>
+		<description></description>
+		<servlet-class>controller.DMSServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+  		<servlet-name>LogInServlet</servlet-name>
+  		<url-pattern>/LogInServlet</url-pattern>
+	</servlet-mapping>
+  
+	<servlet-mapping>
+  		<servlet-name>LogOutServlet</servlet-name>
+  		<url-pattern>/LogOutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+  		<servlet-name>MailServlet</servlet-name>
+  		<url-pattern>/MailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+  		<servlet-name>SignUpServlet</servlet-name>
+  		<url-pattern>/SignUpServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+  		<servlet-name>UploadServlet</servlet-name>
+  		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EmailIdListServlet</servlet-name>
+		<url-pattern>/EmailIdListServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DMSServlet</servlet-name>
+		<url-pattern>/DMSServlet</url-pattern>
+	</servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
