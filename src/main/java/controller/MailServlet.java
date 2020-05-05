@@ -16,8 +16,8 @@ public class MailServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String toEmailId = request.getParameter("forgetEmailId").trim();
 		User user = UserService.selectUserByEmailId(toEmailId);
-		String fromMail = "bhumit13@gecg28.ac.in";
-		String fromMailPassword = "bhumit123";
+		String fromMail = "";
+		String fromMailPassword = "";
 		String subject = "Forgot Password for Dynamic Mailing System";
 		String body = "Your Password is:\n"+user.getPassword();
 		String filePath = "";
